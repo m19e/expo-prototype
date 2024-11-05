@@ -1,0 +1,28 @@
+{
+    "members": [
+        {
+            "id": 1,
+            "name": "わるいあめ",
+            "avatar": "/ame_waru.png",
+            "twitterId": "ツイッターID"
+        },
+        {
+            "id": 2,
+            "name": "ニッコリあめ",
+            "avatar": "/ame_niko.png",
+            "twitterId": "ツイッターID"
+        },
+        {
+            "id": 3,
+            "name": "りす",
+            "avatar": "/risu.png",
+            "twitterId": "ツイッターID"
+        },
+        {
+            "id": 4,
+            "name": "リラックスりす",
+            "avatar": "/risu_relax.png",
+            "twitterId": "ツイッターID"
+        }
+    ]
+}
