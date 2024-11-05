@@ -19,3 +19,8 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.expo-title {
+  @apply absolute origin-top-left whitespace-nowrap rotate-90 top-0 left-16;
+  @apply md:rotate-0 md:top-auto md:left-auto md:bottom-0 md:right-0;
+}
