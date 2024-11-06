@@ -11,6 +11,8 @@
     "dev-mock": "next dev && json-server --watch db.json --port 3001"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "gsap": "^3.12.5",
     "json-server": "^1.0.0-beta.3",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
