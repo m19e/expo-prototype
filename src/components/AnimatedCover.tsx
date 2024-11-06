@@ -3,8 +3,9 @@
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import Image from "next/image";
 
-export function AnimatedCover() {
+export function SampleAnimation() {
     const container = useRef<HTMLElement | null>(null);
     const tl = useRef<GSAPTimeline | null>(null);
 
@@ -45,3 +46,47 @@ export function AnimatedCover() {
         </main>
     );
 }
+
+export const AnimatedCover = () => {
+    const container = useRef<HTMLDivElement | null>(null);
+    const tl = useRef<GSAPTimeline | null>(null);
+
+    useGSAP(() => {
+        //HTMLElement内で取得されたclassNameがboxの要素を全て取得
+        // 複数のアニメーションを作るなら、refはHTMLDivElementで取得した方が良いかも
+
+        // 座標の初期値は、CSSで設定した地点(x:0, y:0)
+        gsap.set(".cover", { scale: 1 });
+
+        // タイムラインを使ってアニメーションを作成
+        tl.current = gsap
+            .timeline()
+            .to(".cover", { scale: 2, opacity: 1, duration: 2, delay: 1 })
+            .to(".cover", { opacity: 0, duration: 1 })
+            // オープニングアニメーションなので使わなくなった要素は非表示にする
+            .to(".cover", { display: "none", duration: 0 });
+    }, { scope: container });
+
+    return (
+        <div
+            className="bg-gray-400 w-full min-h-screen relative overflow-hidden"
+            ref={container}
+        >
+            <Image
+                src="/cover_room.png"
+                alt="cover room"
+                fill
+                style={{ objectFit: "cover" }}
+                priority
+            />
+            <Image
+                className="cover origin-bottom"
+                src="/cover_window.png"
+                alt="cover"
+                fill
+                style={{ objectFit: "cover" }}
+                priority
+            />
+        </div>
+    );
+};
