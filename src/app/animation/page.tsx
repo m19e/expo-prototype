@@ -1,6 +1,5 @@
-import { AnimatedCover, SampleAnimation } from "@/components/AnimatedCover";
+import { AnimatedWindow } from "@/components/AnimatedCover";
 
 export default function Animation() {
-    return <AnimatedCover />;
-    return <SampleAnimation />;
+    return <AnimatedWindow />;
 }
