@@ -28,7 +28,6 @@ export function SampleAnimation() {
             .to(boxes[2], { y: 0, opacity: 1, duration: 1 })
             .to(boxes[3], { x: 0, opacity: 1, duration: 1 })
             .to(boxes, { y: +100, opacity: 0, duration: 1 })
-            // オープニングアニメーションなので使わなくなった要素は非表示にする
             .to(boxes, { display: "none", duration: 0 });
     }, { scope: container });
 
@@ -47,24 +46,37 @@ export function SampleAnimation() {
     );
 }
 
-export const AnimatedCover = () => {
+export const AnimatedWindow = () => {
     const container = useRef<HTMLDivElement | null>(null);
     const tl = useRef<GSAPTimeline | null>(null);
 
     useGSAP(() => {
-        //HTMLElement内で取得されたclassNameがboxの要素を全て取得
-        // 複数のアニメーションを作るなら、refはHTMLDivElementで取得した方が良いかも
+        gsap.set(".window", { scale: 1 });
 
-        // 座標の初期値は、CSSで設定した地点(x:0, y:0)
-        gsap.set(".cover", { scale: 1 });
-
-        // タイムラインを使ってアニメーションを作成
         tl.current = gsap
             .timeline()
-            .to(".cover", { scale: 2, opacity: 1, duration: 2, delay: 1 })
-            .to(".cover", { opacity: 0, duration: 1 })
-            // オープニングアニメーションなので使わなくなった要素は非表示にする
-            .to(".cover", { display: "none", duration: 0 });
+            .to(".window-left", {
+                rotateY: "-120deg",
+                ease: "back.out",
+                duration: 3,
+                delay: 1,
+            })
+            .to(".window-right", {
+                rotateY: "120deg",
+                ease: "back.out",
+                duration: 3,
+            }, "<")
+            .to(".window-frame", {
+                scale: 6,
+                ease: "circ.inOut",
+                duration: 2,
+                delay: 1,
+            }, "<").to(".window-frame", {
+                opacity: 0,
+                ease: "expo.out",
+                duration: 1,
+            })
+            .to(".window-frame", { display: "none", duration: 0 });
     }, { scope: container });
 
     return (
@@ -79,14 +91,20 @@ export const AnimatedCover = () => {
                 style={{ objectFit: "cover" }}
                 priority
             />
-            <Image
-                className="cover origin-bottom"
-                src="/cover_window.png"
-                alt="cover"
-                fill
-                style={{ objectFit: "cover" }}
-                priority
-            />
+            <div className="window-frame absolute inset-0 grid place-content-center bg-gray-300">
+                <div
+                    className="flex gap-[1px] bg-yellow-100 border border-gray-400 "
+                    style={{
+                        WebkitPerspective: "800px",
+                        perspective: "800px",
+                    }}
+                >
+                    <div className="window-left origin-left w-40 h-80 bg-blue-300 grid place-content-center z-10">
+                    </div>
+                    <div className="window-right origin-right w-40 h-80 bg-blue-300 grid place-content-center z-10">
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
