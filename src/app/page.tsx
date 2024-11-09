@@ -4,8 +4,8 @@ import { MEMBER_ID_LIST, MEMBER_MAP } from "@/constants";
 
 export default async function Home() {
   return (
-    <div className="grid items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
-      <header className="bg-gray-100 w-full relative min-h-screen">
+    <div className="flex flex-col font-[family-name:var(--font-geist-sans)]">
+      <header className="bg-gray-100 w-full relative h-[30rem]  md:min-h-screen">
         <Image
           src="/cover_room.png"
           alt="cover room"
@@ -13,8 +13,9 @@ export default async function Home() {
           style={{ objectFit: "cover" }}
           priority
         />
+
         <div className="expo-title bg-gradient-to-r from-indigo-400  to-pink-200 pt-1 pr-1">
-          <span className="text-6xl text-white font-extralight bg-gradient-to-b from-white via-white to-transparent inline-block text-transparent bg-clip-text">
+          <span className="text-3xl  md:text-6xl text-white font-extralight bg-gradient-to-b from-white via-white to-transparent inline-block text-transparent bg-clip-text">
             Twinkle Happy Sharing!
           </span>
         </div>
