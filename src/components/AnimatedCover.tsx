@@ -85,8 +85,8 @@ export const AnimatedWindow = () => {
             ref={container}
         >
             <Image
-                src="/cover_room.png"
-                alt="cover room"
+                src="/cover.webp"
+                alt="cover"
                 fill
                 style={{ objectFit: "cover" }}
                 priority
