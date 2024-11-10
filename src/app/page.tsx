@@ -17,7 +17,7 @@ export default async function Home() {
         </div>
 
         <div className="expo-title bg-gradient-to-r from-indigo-400  to-pink-200 pt-1 pr-1">
-          <span className="text-3xl md:text-6xl text-white font-extralight bg-gradient-to-b from-white via-white to-transparent inline-block text-transparent bg-clip-text">
+          <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-extralight bg-gradient-to-b from-white via-white to-transparent inline-block text-transparent bg-clip-text">
             Twinkle Happy Sharing!
           </span>
         </div>
