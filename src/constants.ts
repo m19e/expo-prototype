@@ -54,3 +54,10 @@ export const MEMBER_ID_LIST = [
     "Starrykarasu",
     "mikamihoP",
 ] as const;
+
+export const CONTACT_ID_LIST = [
+    "Starrykarasu",
+    "ultimate_wanwan",
+    "CootDesign",
+    "Versas_me",
+] as const;
