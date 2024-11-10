@@ -5,8 +5,8 @@ import { MEMBER_ID_LIST, MEMBER_MAP } from "@/constants";
 export default async function Home() {
   return (
     <div className="grid items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
-      <header className="bg-gray-100 w-full relative flex justify-center bg-gradient-to-b from-indigo-400 to-pink-200 ">
-        <div className="relative w-full h-[32rem] md:max-w-[72rem] md:min-h-screen">
+      <header className="bg-gray-100 w-full relative flex justify-center overflow-hidden bg-gradient-to-b from-indigo-400 to-pink-200 ">
+        <div className="relative max-h-screen aspect-[3/4] w-full md:aspect-[5/4] md:w-auto md:h-screen xl:aspect-[3/2]">
           <Image
             src="/cover.webp"
             alt="cover room"
@@ -17,7 +17,7 @@ export default async function Home() {
         </div>
 
         <div className="expo-title bg-gradient-to-r from-indigo-400  to-pink-200 pt-1 pr-1">
-          <span className="text-3xl  md:text-6xl text-white font-extralight bg-gradient-to-b from-white via-white to-transparent inline-block text-transparent bg-clip-text">
+          <span className="text-3xl sm:text-6xl text-white font-extralight bg-gradient-to-b from-white via-white to-transparent inline-block text-transparent bg-clip-text">
             Twinkle Happy Sharing!
           </span>
         </div>
