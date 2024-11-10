@@ -1,52 +1,47 @@
 export const MEMBER_MAP = {
     "Starrykarasu": {
         id: "Starrykarasu",
-        name: "ほしの",
-        url: {
-            pixiv: "",
-        },
+        name: "ほしのりゅう",
+        role: "企画責任者",
     },
     "hakkadr": {
         id: "hakkadr",
         name: "はっか飴",
-        url: {
-            pixiv: "",
-        },
     },
     "hataori_ryo": {
         id: "hataori_ryo",
-        name: "はたおり",
-        url: {
-            pixiv: "",
-        },
+        name: "機織了",
     },
     "o2_hk5": {
         id: "o2_hk5",
-        name: "りっか",
-        url: {
-            pixiv: "",
-        },
+        name: "荻原六花",
     },
     "cocoa_mouso": {
         id: "cocoa_mouso",
         name: "ココア",
-        url: {
-            pixiv: "",
-        },
     },
     "gene_lt4147": {
         id: "gene_lt4147",
-        name: "ジェネ/楸燈樹",
-        url: {
-            pixiv: "",
-        },
+        name: "楸燈樹",
     },
     "mikamihoP": {
         id: "mikamihoP",
-        name: "ほり。|軍鶏",
-        url: {
-            pixiv: "",
-        },
+        name: "ほり。",
+    },
+    "ultimate_wanwan": {
+        id: "ultimate_wanwan",
+        name: "わんこ",
+        role: "表紙イラスト",
+    },
+    "CootDesign": {
+        id: "CootDesign",
+        name: "coot design.",
+        role: "表紙デザイン",
+    },
+    "Versas_me": {
+        id: "Versas_me",
+        name: "ミー",
+        role: "サイト制作",
     },
 } as const;
 
