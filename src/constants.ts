@@ -46,11 +46,11 @@ export const MEMBER_MAP = {
 } as const;
 
 export const MEMBER_ID_LIST = [
-    "Starrykarasu",
-    "hakkadr",
-    "hataori_ryo",
     "o2_hk5",
     "cocoa_mouso",
+    "hakkadr",
+    "hataori_ryo",
     "gene_lt4147",
+    "Starrykarasu",
     "mikamihoP",
 ] as const;
