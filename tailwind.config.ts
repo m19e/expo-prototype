@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { addIconSelectors } from "@iconify/tailwind";
 
 const config: Config = {
   content: [
@@ -14,6 +15,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    addIconSelectors({
+      prefixes: ["line-md"],
+      iconSelector: ".{prefix}__{name}",
+    }),
+  ],
 };
 export default config;
