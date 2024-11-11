@@ -2,7 +2,7 @@
   "version": "4",
   "specifiers": {
     "npm:@gsap/react@^2.1.1": "2.1.1",
-    "npm:@iconify/react@^5.0.2": "5.0.2_react@18.3.1",
+    "npm:@iconify-icon/react@^2.1.0": "2.1.0_react@18.3.1",
     "npm:@types/node@20": "20.17.5",
     "npm:@types/react-dom@18": "18.3.1",
     "npm:@types/react@18": "18.3.12",
@@ -32,10 +32,10 @@
         "react@18.3.1"
       ]
     },
-    "@iconify/react@5.0.2_react@18.3.1": {
-      "integrity": "sha512-wtmstbYlEbo4NDxFxBJkhkf9gJBDqMGr7FaqLrAUMneRV3Z+fVHLJjOhWbkAF8xDQNFC/wcTYdrWo1lnRhmagQ==",
+    "@iconify-icon/react@2.1.0_react@18.3.1": {
+      "integrity": "sha512-OuEsW5Y474rg3WlseLFQ0uuJjnyk1DhLN1Ire5JGjF4sF8/rNxGJDLSItEogRcKuUbL+zzuoBsaTUVVInuixRA==",
       "dependencies": [
-        "@iconify/types",
+        "iconify-icon",
         "react@18.3.1"
       ]
     },
@@ -582,6 +582,12 @@
     "http-status-emojis@2.2.0": {
       "integrity": "sha512-ompKtgwpx8ff0hsbpIB7oE4ax1LXoHmftsHHStMELX56ivG3GhofTX8ZHWlUaFKfGjcGjw6G3rPk7dJRXMmbbg=="
     },
+    "iconify-icon@2.1.0": {
+      "integrity": "sha512-lto4XU3bwTQnb+D/CsJ4dWAo0aDe+uPMxEtxyOodw9l7R9QnJUUab3GCehlw2M8mDHdeUu/ufx8PvRQiJphhXg==",
+      "dependencies": [
+        "@iconify/types"
+      ]
+    },
     "inflection@3.0.0": {
       "integrity": "sha512-1zEJU1l19SgJlmwqsEyFTbScw/tkMHFenUo//Y0i+XEP83gDFdMvPizAD/WGcE+l1ku12PcTVHQhO6g5E0UCMw=="
     },
@@ -1112,7 +1118,7 @@
     "packageJson": {
       "dependencies": [
         "npm:@gsap/react@^2.1.1",
-        "npm:@iconify/react@^5.0.2",
+        "npm:@iconify-icon/react@^2.1.0",
         "npm:@types/node@20",
         "npm:@types/react-dom@18",
         "npm:@types/react@18",
