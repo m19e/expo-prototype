@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { MEMBER_ID_LIST, MEMBER_MAP } from "@/constants";
+import { CONTACT_ID_LIST, MEMBER_ID_LIST, MEMBER_MAP } from "@/constants";
+import { GitHubIcon } from "@/components/icons/GitHub";
+import { TwitterIcon } from "@/components/icons/Twitter";
 
 export default async function Home() {
   return (
@@ -67,7 +69,7 @@ export default async function Home() {
         </div>
 
         <p className="text-6xl text-blue-400">Members</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-2">
+        <div className="grid grid-cols-2 items-center gap-2">
           {MEMBER_ID_LIST.map((memberId) => (
             <div
               key={memberId}
@@ -87,10 +89,44 @@ export default async function Home() {
                   priority
                 />
               </div>
-              <p className="text-sm">{MEMBER_MAP[memberId].name}</p>
+              <div className="w-full flex items-center justify-between p-2">
+                <p className="">{MEMBER_MAP[memberId].name}</p>
+                <TwitterIcon className="w-6 h-6" />
+              </div>
             </div>
           ))}
         </div>
+        <div className="hidden grid grid-cols-2 gap-4 ">
+          {CONTACT_ID_LIST.map((memberId) => (
+            <div
+              key={memberId}
+              className="flex"
+            >
+              <div
+                className="relative min-w-20"
+                style={{
+                  aspectRatio: "1 / 1",
+                }}
+              >
+                <Image
+                  src={`/avatar/${memberId}.jpg`}
+                  alt="cover"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                />
+              </div>
+              <div className="flex flex-col justify-between">
+                <span>
+                  {MEMBER_MAP[memberId].role}
+                </span>
+                <span>{MEMBER_MAP[memberId].name}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+        <GitHubIcon className="hidden w-12 h-12" />
+        <TwitterIcon className="hidden w-12 h-12" />
       </main>
       {/* <footer className="bg-gray-100">FOOTER</footer> */}
     </div>
