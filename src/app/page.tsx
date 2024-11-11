@@ -43,27 +43,25 @@ export default async function Home() {
           <div className="grid gap-2 w-80">
             <div className="flex flex-col">
               <p>タイトル</p>
-              <p className="text-right">Twinkle Happy Sharing! 2nd SEASON</p>
+              <p className="text-right">Twinkle Happy Sharing! -2nd SEASON-</p>
             </div>
             <div className="flex flex-col">
               <p>仕様</p>
-              <p className="text-right">A5 本文xxP</p>
+              <p className="text-right">A5サイズ/未定ページ</p>
             </div>
             <div className="flex flex-col">
-              <p>頒布イベント</p>
+              <p>頒布情報</p>
               <p className="text-right">
-                アイマスEXPO
-              </p>
-            </div>
-            <div className="flex flex-col">
-              <p>頒布サークル</p>
-              <p className="text-right">
-                1日目 タ-1b HoShiKaRaSu
+                アイマスEXPO 12/14(土)タ-1b HoShiKaRaSu
               </p>
             </div>
             <div className="flex flex-col">
               <p>会場頒布価格</p>
-              <p className="text-right">xxxx円</p>
+              <p className="text-right">500円</p>
+            </div>
+            <div className="flex flex-col">
+              <p>企画責任者</p>
+              <p className="text-right">ほしのりゅう starrykarasu@gmail.com</p>
             </div>
           </div>
         </div>
