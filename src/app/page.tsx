@@ -3,6 +3,7 @@ import Image from "next/image";
 import { CONTACT_ID_LIST, MEMBER_ID_LIST, MEMBER_MAP } from "@/constants";
 import { GitHubIcon } from "@/components/icons/GitHub";
 import { TwitterIcon } from "@/components/icons/Twitter";
+import { MemberList } from "@/components/MemberList";
 
 export default async function Home() {
   return (
@@ -69,33 +70,7 @@ export default async function Home() {
         </div>
 
         <p className="text-6xl text-blue-400">Members</p>
-        <div className="grid grid-cols-2 items-center gap-2">
-          {MEMBER_ID_LIST.map((memberId) => (
-            <div
-              key={memberId}
-              className="flex flex-col items-center bg-yellow-100 rounded-md  overflow-hidden shadow-md"
-            >
-              <div
-                className="relative min-w-40"
-                style={{
-                  aspectRatio: "1 / 1",
-                }}
-              >
-                <Image
-                  src={`/avatar/${memberId}.jpg`}
-                  alt="cover"
-                  fill
-                  style={{ objectFit: "cover" }}
-                  priority
-                />
-              </div>
-              <div className="w-full flex items-center justify-between p-2">
-                <p className="">{MEMBER_MAP[memberId].name}</p>
-                <TwitterIcon className="w-6 h-6" />
-              </div>
-            </div>
-          ))}
-        </div>
+        <MemberList />
         <div className="hidden grid grid-cols-2 gap-4 ">
           {CONTACT_ID_LIST.map((memberId) => (
             <div
