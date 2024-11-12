@@ -1,7 +1,12 @@
+import { ReanimateIcon } from "@/components/icons/ReanimateIcon";
+import { GitHubSVGGroup } from "@/components/icons/groups/GitHub";
+
 type Props = {
     className?: string;
 };
 
 export const GitHubIcon = ({ className = "" }: Readonly<Props>) => (
-    <span className={"iconify line-md__github-twotone " + className}></span>
+    <ReanimateIcon className={className}>
+        <GitHubSVGGroup />
+    </ReanimateIcon>
 );
