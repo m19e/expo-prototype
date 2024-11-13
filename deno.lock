@@ -7,6 +7,7 @@
     "npm:@types/node@20": "20.17.5",
     "npm:@types/react-dom@18": "18.3.1",
     "npm:@types/react@18": "18.3.12",
+    "npm:@vercel/analytics@^1.4.0": "1.4.0_next@15.0.2__react@19.0.0-rc-02c0e824-20241028__react-dom@19.0.0-rc-02c0e824-20241028___react@19.0.0-rc-02c0e824-20241028_react@19.0.0-rc-02c0e824-20241028_react-dom@19.0.0-rc-02c0e824-20241028__react@19.0.0-rc-02c0e824-20241028",
     "npm:gsap@^3.12.5": "3.12.5",
     "npm:json-server@^1.0.0-beta.3": "1.0.0-beta.3",
     "npm:next@15.0.2": "15.0.2_react@19.0.0-rc-02c0e824-20241028_react-dom@19.0.0-rc-02c0e824-20241028__react@19.0.0-rc-02c0e824-20241028",
@@ -354,6 +355,13 @@
       "dependencies": [
         "@types/prop-types",
         "csstype"
+      ]
+    },
+    "@vercel/analytics@1.4.0_next@15.0.2__react@19.0.0-rc-02c0e824-20241028__react-dom@19.0.0-rc-02c0e824-20241028___react@19.0.0-rc-02c0e824-20241028_react@19.0.0-rc-02c0e824-20241028_react-dom@19.0.0-rc-02c0e824-20241028__react@19.0.0-rc-02c0e824-20241028": {
+      "integrity": "sha512-eUwWW7l8nPJb0nJmjZuYp9o7YZ9XPj67lU9mEogaPXiFxq/SFB5DMnvQVk4aKcL8kFgotiYdDZWxdiNcWo7cgg==",
+      "dependencies": [
+        "next",
+        "react@19.0.0-rc-02c0e824-20241028"
       ]
     },
     "ansi-regex@5.0.1": {
@@ -1123,6 +1131,7 @@
         "npm:@types/node@20",
         "npm:@types/react-dom@18",
         "npm:@types/react@18",
+        "npm:@vercel/analytics@^1.4.0",
         "npm:gsap@^3.12.5",
         "npm:json-server@^1.0.0-beta.3",
         "npm:next@15.0.2",
