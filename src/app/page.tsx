@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { CONTACT_ID_LIST, MEMBER_ID_LIST, MEMBER_MAP } from "@/constants";
 import { Member } from "@/components/Member";
