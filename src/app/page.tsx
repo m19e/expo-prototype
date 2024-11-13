@@ -7,7 +7,7 @@ import { TwitterIcon } from "@/components/icons/Twitter";
 export default async function Home() {
   return (
     <div className="grid items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
-      <header className="w-full relative flex justify-center overflow-hidden bg-gradient-to-b from-indigo-400 to-pink-200 ">
+      <header className="w-full relative flex justify-center overflow-hidden bg-pattern">
         <div className="relative max-h-screen aspect-[3/4] w-full md:aspect-[5/4] md:w-auto md:h-screen xl:aspect-[3/2]">
           <Image
             src="/cover.webp"
@@ -24,9 +24,9 @@ export default async function Home() {
           </span>
         </div>
       </header>
-      <main className="flex flex-col space-y-8 w-full">
-        <section className="flex flex-col items-center gap-8 p-8 bg-blue-200 ">
-          <p className="text-5xl font-semibold text-gray-700 w-min ">
+      <main className="flex flex-col w-full">
+        <section className="flex flex-col items-center space-y-8 pt-8 bg-blue-100">
+          <p className="text-5xl font-semibold text-gray-700">
             Information
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -75,13 +75,17 @@ export default async function Home() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col items-center gap-8">
-          <p className="text-5xl font-semibold text-gray-700 ">Members</p>
-          <div className="grid grid-cols-2 items-center gap-2">
+        <div className="h-16 bg-gradient-to-b from-blue-100 to-pink-100">
+        </div>
+        <section className="flex flex-col items-center space-y-8 bg-pink-100 ">
+          <p className="text-5xl font-semibold text-gray-700">Members</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-x-4 gap-y-2">
             {MEMBER_ID_LIST.map((id) => <Member key={id} id={id} />)}
           </div>
         </section>
-        <section className="flex flex-col items-center gap-8 p-8 bg-blue-100">
+        <div className="h-16 bg-gradient-to-b from-pink-100 to-yellow-50">
+        </div>
+        <section className="flex flex-col items-center space-y-8 pb-8 bg-yellow-50">
           <div className="hidden grid grid-cols-2 gap-4 ">
             {CONTACT_ID_LIST.map((memberId) => (
               <div
