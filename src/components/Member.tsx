@@ -9,9 +9,9 @@ type Props = {
 
 export const Member = ({ id }: Readonly<Props>) => {
     return (
-        <div className="flex flex-col items-center bg-yellow-100 rounded-md overflow-hidden shadow-md">
+        <div className="flex flex-col items-center">
             <div
-                className="relative min-w-40"
+                className="relative min-w-40 overflow-hidden rounded-md shadow-md"
                 style={{
                     aspectRatio: "1 / 1",
                 }}
@@ -24,7 +24,7 @@ export const Member = ({ id }: Readonly<Props>) => {
                     priority
                 />
             </div>
-            <div className="w-full flex items-center justify-between p-2">
+            <div className="w-full flex items-center justify-between py-2">
                 <p className="">{MEMBER_MAP[id].name}</p>
                 <TwitterIcon className="w-6 h-6" />
             </div>
