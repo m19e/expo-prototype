@@ -1,4 +1,4 @@
-import { AnimatedWindow } from "@/components/AnimatedCover";
+import { AnimatedWindow } from "@/components/AnimatedWindow";
 
 export default function Animation() {
     return <AnimatedWindow />;
