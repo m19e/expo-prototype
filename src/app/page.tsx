@@ -95,7 +95,7 @@ export default async function Home() {
         <div className="h-16 bg-gradient-to-b from-pink-100 to-yellow-50">
         </div>
         <section className="flex flex-col items-center space-y-8 pb-8 bg-yellow-50">
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4">
             {CONTACT_ID_LIST.map((memberId) => (
               <div
                 key={memberId}
