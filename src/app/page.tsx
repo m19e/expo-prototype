@@ -121,7 +121,13 @@ export default async function Home() {
                   </span>
                   <span>{MEMBER_MAP[memberId].name}</span>
                   <div className="flex items-center gap-1 py-2">
-                    <TwitterIcon className="w-8 h-8" />
+                    <a
+                      href={`https://twitter.com/${memberId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <TwitterIcon className="w-8 h-8" />
+                    </a>
                     {!!MEMBER_MAP[memberId].github && (
                       <a
                         href={MEMBER_MAP[memberId].github}

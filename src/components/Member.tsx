@@ -26,7 +26,13 @@ export const Member = ({ id }: Readonly<Props>) => {
             </div>
             <div className="w-full flex items-center justify-between py-2">
                 <p className="">{MEMBER_MAP[id].name}</p>
-                <TwitterIcon className="w-6 h-6" />
+                <a
+                    href={`https://twitter.com/${id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <TwitterIcon className="w-6 h-6" />
+                </a>
             </div>
         </div>
     );
