@@ -45,7 +45,7 @@ export default async function Home() {
                 priority
               />
             </div>
-            <div className="grid gap-2 w-80">
+            <div className="grid gap-2 w-[22rem] text-lg text-gray-600 font-semibold">
               <div className="flex flex-col">
                 <p>タイトル</p>
                 <p className="text-right">
@@ -62,10 +62,10 @@ export default async function Home() {
               <div className="flex flex-col">
                 <p>頒布情報</p>
                 <p className="text-right">
-                  アイマスEXPO 12/14(土)タ-1b
+                  アイマスEXPO 12/14(土)
                 </p>
                 <p className="text-right">
-                  HoShiKaRaSu
+                  タ-1b HoShiKaRaSu
                 </p>
               </div>
               <div className="flex flex-col">
