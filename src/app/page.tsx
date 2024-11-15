@@ -95,14 +95,14 @@ export default async function Home() {
         <div className="h-16 bg-gradient-to-b from-pink-100 to-yellow-50">
         </div>
         <section className="flex flex-col items-center space-y-8 pb-8 bg-yellow-50">
-          <div className="hidden grid grid-cols-2 gap-4 ">
+          <div className="grid grid-cols-4 gap-8">
             {CONTACT_ID_LIST.map((memberId) => (
               <div
                 key={memberId}
-                className="flex"
+                className="flex flex-col items-center gap-2"
               >
                 <div
-                  className="relative min-w-20"
+                  className="relative w-32 rounded-full overflow-hidden"
                   style={{
                     aspectRatio: "1 / 1",
                   }}
@@ -115,17 +115,27 @@ export default async function Home() {
                     priority
                   />
                 </div>
-                <div className="flex flex-col justify-between">
+                <div className="flex flex-col items-center">
                   <span>
                     {MEMBER_MAP[memberId].role}
                   </span>
                   <span>{MEMBER_MAP[memberId].name}</span>
+                  <div className="flex gap-1 py-2">
+                    <TwitterIcon className="w-8 h-8 " />
+                    {!!MEMBER_MAP[memberId].github && (
+                      <a
+                        href={MEMBER_MAP[memberId].github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <GitHubIcon className="w-8 h-8" />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-          <GitHubIcon className="hidden w-12 h-12" />
-          <TwitterIcon className="hidden w-12 h-12" />
         </section>
       </main>
       {/* <footer className="bg-gray-100">FOOTER</footer> */}
