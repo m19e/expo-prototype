@@ -138,7 +138,7 @@ export default async function Home() {
           </div>
         </section>
       </main>
-      {/* <footer className="bg-gray-100">FOOTER</footer> */}
+      <footer className="bg-yellow-800 h-8 w-full"></footer>
     </div>
   );
 }
