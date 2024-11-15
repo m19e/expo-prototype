@@ -120,15 +120,15 @@ export default async function Home() {
                     {MEMBER_MAP[memberId].role}
                   </span>
                   <span>{MEMBER_MAP[memberId].name}</span>
-                  <div className="flex gap-1 py-2">
-                    <TwitterIcon className="w-8 h-8 " />
+                  <div className="flex items-center gap-1 py-2">
+                    <TwitterIcon className="w-8 h-8" />
                     {!!MEMBER_MAP[memberId].github && (
                       <a
                         href={MEMBER_MAP[memberId].github}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <GitHubIcon className="w-8 h-8" />
+                        <GitHubIcon className="w-9 h-9" />
                       </a>
                     )}
                   </div>
