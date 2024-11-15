@@ -49,7 +49,10 @@ export default async function Home() {
               <div className="flex flex-col">
                 <p>タイトル</p>
                 <p className="text-right">
-                  Twinkle Happy Sharing! -2nd SEASON-
+                  Twinkle Happy Sharing!
+                </p>
+                <p className="text-right">
+                  -2nd SEASON-
                 </p>
               </div>
               <div className="flex flex-col">
@@ -59,7 +62,10 @@ export default async function Home() {
               <div className="flex flex-col">
                 <p>頒布情報</p>
                 <p className="text-right">
-                  アイマスEXPO 12/14(土)タ-1b HoShiKaRaSu
+                  アイマスEXPO 12/14(土)タ-1b
+                </p>
+                <p className="text-right">
+                  HoShiKaRaSu
                 </p>
               </div>
               <div className="flex flex-col">
@@ -69,7 +75,10 @@ export default async function Home() {
               <div className="flex flex-col">
                 <p>企画責任者</p>
                 <p className="text-right">
-                  ほしのりゅう starrykarasu@gmail.com
+                  ほしのりゅう
+                </p>
+                <p className="text-right">
+                  starrykarasu@gmail.com
                 </p>
               </div>
             </div>
