@@ -1,8 +1,11 @@
+import { MemberData } from "@/types";
+
 export const MEMBER_MAP = {
     "Starrykarasu": {
         id: "Starrykarasu",
         name: "ほしのりゅう",
         role: "企画責任者",
+        github: undefined,
     },
     "hakkadr": {
         id: "hakkadr",
@@ -32,18 +35,21 @@ export const MEMBER_MAP = {
         id: "ultimate_wanwan",
         name: "わんこ",
         role: "表紙イラスト",
+        github: undefined,
     },
     "CootDesign": {
         id: "CootDesign",
         name: "coot design.",
         role: "表紙デザイン",
+        github: undefined,
     },
     "Versas_me": {
         id: "Versas_me",
         name: "ミー",
         role: "サイト制作",
+        github: "https://github.com/m19e",
     },
-} as const;
+} as const satisfies { [key: string]: MemberData };
 
 export const MEMBER_ID_LIST = [
     "o2_hk5",
