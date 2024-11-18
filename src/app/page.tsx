@@ -86,15 +86,15 @@ export default async function Home() {
         </section>
         <div className="h-24 bg-gradient-to-b from-blue-100 to-pink-100">
         </div>
-        <section className="flex flex-col items-center space-y-8 bg-pink-100 ">
+        <section className="flex flex-col items-center space-y-8 bg-pink-100">
           <p className="text-5xl font-semibold text-gray-700">Members</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-x-4 gap-y-2">
+          <div className="grid grid-cols-2 md:grid-cols-4 items-center gap-x-4 gap-y-2">
             {MEMBER_ID_LIST.map((id) => <Member key={id} id={id} />)}
           </div>
         </section>
         <div className="h-24 bg-gradient-to-b from-pink-100 to-yellow-50">
         </div>
-        <section className="flex flex-col items-center space-y-8 pb-8 bg-yellow-50">
+        <section className="flex flex-col items-center space-y-8 pb-10 bg-yellow-50">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-4">
             {CONTACT_ID_LIST.map((memberId) => (
               <div
