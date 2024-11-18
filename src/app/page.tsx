@@ -6,8 +6,8 @@ import { TwitterIcon } from "@/components/icons/Twitter";
 
 export default async function Home() {
   return (
-    <div className="grid items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
-      <header className="w-full relative flex justify-center overflow-hidden bg-pattern">
+    <div className="grid items-center justify-items-center">
+      <header className="w-full relative flex justify-center overflow-hidden bg-pattern font-geist-sans">
         <div className="relative max-h-screen aspect-[3/4] w-full md:aspect-[5/4] md:w-auto md:h-screen xl:aspect-[3/2]">
           <Image
             src="/cover.webp"
