@@ -3,6 +3,7 @@ import { CONTACT_ID_LIST, MEMBER_ID_LIST, MEMBER_MAP } from "@/constants";
 import { Member } from "@/components/Member";
 import { GitHubIcon } from "@/components/icons/GitHub";
 import { TwitterIcon } from "@/components/icons/Twitter";
+import { Information } from "@/components/Information";
 
 export default async function Home() {
   return (
@@ -29,9 +30,9 @@ export default async function Home() {
           <p className="text-5xl text-gray-700">
             Information
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex flex-col md:flex-row gap-8">
             <div
-              className="relative w-full self-stretch md:self-auto"
+              className="relative w-[22rem]"
               style={{
                 aspectRatio: "1 / 1.4",
               }}
@@ -45,42 +46,27 @@ export default async function Home() {
                 priority
               />
             </div>
-            <div className="grid gap-2 w-[22rem] lg:w-[28rem] xl:w-[32rem] text-lg md:text-xl lg:text-2xl xl:text-3xl">
-              <div className="flex flex-col">
-                <p>タイトル</p>
-                <p className="text-right">
-                  Twinkle Happy Sharing!
-                </p>
-                <p className="text-right">
-                  -2nd SEASON-
-                </p>
+            <div className="grid gap-2 py-2 w-[22rem]">
+              <div className="flex flex-col items-center">
+                <p className="text-2xl">Twinkle Happy Sharing!</p>
+                <p className="text-xl">-2nd SEASON-</p>
               </div>
-              <div className="flex flex-col">
-                <p>仕様</p>
-                <p className="text-right">A5サイズ/未定ページ</p>
-              </div>
-              <div className="flex flex-col">
-                <p>頒布情報</p>
-                <p className="text-right">
-                  アイマスEXPO 12/14(土)
-                </p>
-                <p className="text-right">
-                  タ-1b HoShiKaRaSu
-                </p>
-              </div>
-              <div className="flex flex-col">
-                <p>会場頒布価格</p>
-                <p className="text-right">500円</p>
-              </div>
-              <div className="flex flex-col">
-                <p>企画責任者</p>
-                <p className="text-right">
-                  ほしのりゅう
-                </p>
-                <p className="text-right">
-                  starrykarasu@gmail.com
-                </p>
-              </div>
+              <Information
+                title="仕様"
+                contents="A5サイズ/未定ページ"
+              />
+              <Information
+                title="頒布情報"
+                contents={["アイマスEXPO 12/14(土)", "タ-1b HoShiKaRaSu"]}
+              />
+              <Information
+                title="会場頒布価格"
+                contents="500円"
+              />
+              <Information
+                title="企画責任者"
+                contents={["ほしのりゅう", "starrykarasu@gmail.com"]}
+              />
             </div>
           </div>
         </section>
