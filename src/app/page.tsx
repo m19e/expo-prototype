@@ -84,7 +84,7 @@ export default async function Home() {
             </div>
           </div>
         </section>
-        <div className="h-16 bg-gradient-to-b from-blue-100 to-pink-100">
+        <div className="h-24 bg-gradient-to-b from-blue-100 to-pink-100">
         </div>
         <section className="flex flex-col items-center space-y-8 bg-pink-100 ">
           <p className="text-5xl font-semibold text-gray-700">Members</p>
@@ -92,7 +92,7 @@ export default async function Home() {
             {MEMBER_ID_LIST.map((id) => <Member key={id} id={id} />)}
           </div>
         </section>
-        <div className="h-16 bg-gradient-to-b from-pink-100 to-yellow-50">
+        <div className="h-24 bg-gradient-to-b from-pink-100 to-yellow-50">
         </div>
         <section className="flex flex-col items-center space-y-8 pb-8 bg-yellow-50">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-4">
