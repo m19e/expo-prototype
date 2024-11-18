@@ -45,7 +45,7 @@ export default async function Home() {
                 priority
               />
             </div>
-            <div className="grid gap-2 w-[22rem] text-lg">
+            <div className="grid gap-2 w-96 md:w-[22rem] lg:w-[28rem] xl:w-[32rem] text-lg md:text-xl lg:text-2xl xl:text-3xl">
               <div className="flex flex-col">
                 <p>タイトル</p>
                 <p className="text-right">
