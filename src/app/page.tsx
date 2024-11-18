@@ -18,15 +18,15 @@ export default async function Home() {
           />
         </div>
 
-        <div className="expo-title bg-gradient-to-r from-indigo-400  to-pink-200 pt-1 pr-1">
+        <div className="expo-title bg-gradient-to-r from-indigo-400 to-pink-200 pt-1 pr-1">
           <span className="text-4xl md:text-5xl lg:text-6xl font-extralight bg-gradient-to-b from-white via-white to-transparent text-transparent bg-clip-text">
             Twinkle Happy Sharing!
           </span>
         </div>
       </header>
-      <main className="flex flex-col w-full">
+      <main className="flex flex-col w-full font-rounded font-bold text-gray-700">
         <section className="flex flex-col items-center space-y-8 pt-8 bg-blue-100">
-          <p className="text-5xl font-semibold text-gray-700">
+          <p className="text-5xl text-gray-700">
             Information
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -45,7 +45,7 @@ export default async function Home() {
                 priority
               />
             </div>
-            <div className="grid gap-2 w-[22rem] text-lg text-gray-600 font-semibold">
+            <div className="grid gap-2 w-[22rem] text-lg">
               <div className="flex flex-col">
                 <p>タイトル</p>
                 <p className="text-right">
