@@ -95,7 +95,7 @@ export default async function Home() {
         <div className="h-16 bg-gradient-to-b from-pink-100 to-yellow-50">
         </div>
         <section className="flex flex-col items-center space-y-8 pb-8 bg-yellow-50">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-4">
             {CONTACT_ID_LIST.map((memberId) => (
               <div
                 key={memberId}
@@ -115,12 +115,12 @@ export default async function Home() {
                     priority
                   />
                 </div>
-                <div className="flex flex-col items-center">
-                  <span>
+                <div className="flex flex-col items-center gap-1">
+                  <span className="text-sm px-1 border-b-2 border-gray-600 border-dashed">
                     {MEMBER_MAP[memberId].role}
                   </span>
-                  <span>{MEMBER_MAP[memberId].name}</span>
-                  <div className="flex items-center gap-1 py-2">
+                  <span className="text-lg">{MEMBER_MAP[memberId].name}</span>
+                  <div className="flex items-center gap-1">
                     <a
                       href={`https://twitter.com/${memberId}`}
                       target="_blank"
