@@ -126,7 +126,7 @@ export default async function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <TwitterIcon className="w-8 h-8" />
+                      <TwitterIcon className="w-6 h-6" />
                     </a>
                     {!!MEMBER_MAP[memberId].github && (
                       <a
@@ -134,7 +134,7 @@ export default async function Home() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <GitHubIcon className="w-9 h-9" />
+                        <GitHubIcon className="w-7 h-7" />
                       </a>
                     )}
                   </div>
