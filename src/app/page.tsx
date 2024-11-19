@@ -32,8 +32,8 @@ export default async function Home() {
           <p className="text-5xl text-gray-700 border-b-4 border-blue-200 border-double">
             Information
           </p>
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="relative w-[22rem] aspect-[1/1.4]">
+          <div className="flex flex-col md:flex-row gap-8 p-8 bg-slate-50 rounded-md">
+            <div className="relative w-[20rem] aspect-[1/1.4]">
               <Image
                 className="shadow-md"
                 src="/front_cover.jpg"
@@ -43,7 +43,7 @@ export default async function Home() {
                 priority
               />
             </div>
-            <div className="grid gap-2 py-2 w-[22rem] aspect-[1/1.4]">
+            <div className="grid gap-2 pt-2 w-[20rem] aspect-[1/1.4]">
               <div className="flex flex-col items-center">
                 <p className="text-2xl">Twinkle Happy Sharing!</p>
                 <p className="text-xl">-2nd SEASON-</p>
