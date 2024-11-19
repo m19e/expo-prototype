@@ -32,7 +32,7 @@ export default async function Home() {
           <p className="text-5xl text-gray-700 border-b-4 border-blue-300 border-double">
             Information
           </p>
-          <div className="flex flex-col md:flex-row gap-8 p-4 md:p-8 bg-slate-50 rounded-md">
+          <div className="flex flex-col md:flex-row gap-8 p-4 md:p-8 bg-slate-50 rounded-md shadow">
             <div className="relative w-[20rem] aspect-[1/1.4]">
               <Image
                 className="shadow-md"
