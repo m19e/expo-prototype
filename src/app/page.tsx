@@ -27,7 +27,7 @@ export default async function Home() {
         </div>
       </header>
       <main className="flex flex-col w-full font-rounded font-bold text-gray-700">
-        <section className="flex flex-col items-center space-y-8 pt-8 bg-blue-100">
+        <section className="flex flex-col items-center space-y-12 pt-12 bg-blue-100">
           <p className="text-5xl text-gray-700 border-b-4 border-blue-200 border-double">
             Information
           </p>
@@ -68,7 +68,7 @@ export default async function Home() {
         </section>
         <div className="h-24 bg-gradient-to-b from-blue-100 to-pink-100">
         </div>
-        <section className="flex flex-col items-center space-y-8 bg-pink-100">
+        <section className="flex flex-col items-center space-y-12 bg-pink-100">
           <p className="text-5xl font-semibold text-gray-700 border-b-4 border-pink-200 border-double">
             Members
           </p>
@@ -78,7 +78,7 @@ export default async function Home() {
         </section>
         <div className="h-24 bg-gradient-to-b from-pink-100 to-yellow-50">
         </div>
-        <section className="flex flex-col items-center space-y-8 pb-10 bg-yellow-50">
+        <section className="flex flex-col items-center space-y-12 pb-12 bg-yellow-50">
           <p className="text-5xl font-semibold text-gray-700 border-b-4 border-yellow-200 border-double">
             Contact
           </p>
