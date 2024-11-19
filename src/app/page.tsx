@@ -5,6 +5,7 @@ import { GitHubIcon } from "@/components/icons/GitHub";
 import { TwitterIcon } from "@/components/icons/Twitter";
 import { Information } from "@/components/Information";
 import { InstagramIcon } from "@/components/icons/Instagram";
+import { TwitterShareButton } from "@/components/TwitterShareButton";
 
 export default async function Home() {
   return (
@@ -63,6 +64,9 @@ export default async function Home() {
                 title="企画責任者"
                 contents={["ほしのりゅう", "starrykarasu@gmail.com"]}
               />
+              <div className="flex justify-center">
+                <TwitterShareButton />
+              </div>
             </div>
           </div>
         </section>
