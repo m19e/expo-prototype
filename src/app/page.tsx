@@ -4,6 +4,7 @@ import { Member } from "@/components/Member";
 import { GitHubIcon } from "@/components/icons/GitHub";
 import { TwitterIcon } from "@/components/icons/Twitter";
 import { Information } from "@/components/Information";
+import { InstagramIcon } from "@/components/icons/Instagram";
 
 export default async function Home() {
   return (
@@ -114,13 +115,16 @@ export default async function Home() {
                     >
                       <TwitterIcon className="w-6 h-6" />
                     </a>
-                    {!!MEMBER_MAP[memberId].github && (
+                    {MEMBER_MAP[memberId].link.type !== "none" && (
                       <a
-                        href={MEMBER_MAP[memberId].github}
+                        href={MEMBER_MAP[memberId].link.url}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <GitHubIcon className="w-7 h-7" />
+                        {MEMBER_MAP[memberId].link.type === "github" &&
+                          <GitHubIcon className="w-7 h-7" />}
+                        {MEMBER_MAP[memberId].link.type === "instagram" &&
+                          <InstagramIcon className="w-7 h-7" />}
                       </a>
                     )}
                   </div>
