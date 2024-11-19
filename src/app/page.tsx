@@ -43,7 +43,7 @@ export default async function Home() {
                 priority
               />
             </div>
-            <div className="grid gap-2 pt-2 w-[20rem] aspect-[1/1.4]">
+            <div className="grid gap-2 w-[20rem] aspect-[1/1.4]">
               <div className="flex flex-col items-center">
                 <p className="text-2xl">Twinkle Happy Sharing!</p>
                 <p className="text-xl">-2nd SEASON-</p>
