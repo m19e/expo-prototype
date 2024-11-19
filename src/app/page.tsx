@@ -32,12 +32,7 @@ export default async function Home() {
             Information
           </p>
           <div className="flex flex-col md:flex-row gap-8">
-            <div
-              className="relative w-[22rem]"
-              style={{
-                aspectRatio: "1 / 1.4",
-              }}
-            >
+            <div className="relative w-[22rem] aspect-[1/1.4]">
               <Image
                 className="shadow-md"
                 src="/front_cover.jpg"
