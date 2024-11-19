@@ -5,7 +5,10 @@ export const MEMBER_MAP = {
         id: "Starrykarasu",
         name: "ほしのりゅう",
         role: "企画責任者",
-        github: undefined,
+        link: {
+            type: "none",
+            url: undefined,
+        },
     },
     "hakkadr": {
         id: "hakkadr",
@@ -35,19 +38,28 @@ export const MEMBER_MAP = {
         id: "ultimate_wanwan",
         name: "わんこ",
         role: "表紙イラスト",
-        github: undefined,
+        link: {
+            type: "none",
+            url: undefined,
+        },
     },
     "CootDesign": {
         id: "CootDesign",
         name: "coot design.",
         role: "表紙デザイン",
-        github: undefined,
+        link: {
+            type: "instagram",
+            url: "https://www.instagram.com/coot_design/",
+        },
     },
     "Versas_me": {
         id: "Versas_me",
         name: "ミー",
         role: "サイト制作",
-        github: "https://github.com/m19e",
+        link: {
+            type: "github",
+            url: "https://github.com/m19e",
+        },
     },
 } as const satisfies { [key: string]: MemberData };
 
