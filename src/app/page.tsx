@@ -28,7 +28,7 @@ export default async function Home() {
       </header>
       <main className="flex flex-col w-full font-rounded font-bold text-gray-700">
         <section className="flex flex-col items-center space-y-8 pt-8 bg-blue-100">
-          <p className="text-5xl text-gray-700 border-b-4 border-blue-300 border-double">
+          <p className="text-5xl text-gray-700 border-b-4 border-blue-200 border-double">
             Information
           </p>
           <div className="flex flex-col md:flex-row gap-8">
@@ -69,7 +69,7 @@ export default async function Home() {
         <div className="h-24 bg-gradient-to-b from-blue-100 to-pink-100">
         </div>
         <section className="flex flex-col items-center space-y-8 bg-pink-100">
-          <p className="text-5xl font-semibold text-gray-700 border-b-4 border-pink-300 border-double">
+          <p className="text-5xl font-semibold text-gray-700 border-b-4 border-pink-200 border-double">
             Members
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 items-center gap-x-4 gap-y-2">
@@ -79,7 +79,10 @@ export default async function Home() {
         <div className="h-24 bg-gradient-to-b from-pink-100 to-yellow-50">
         </div>
         <section className="flex flex-col items-center space-y-8 pb-10 bg-yellow-50">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-4">
+          <p className="text-5xl font-semibold text-gray-700 border-b-4 border-yellow-200 border-double">
+            Contact
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-4">
             {CONTACT_ID_LIST.map((memberId) => (
               <div
                 key={memberId}
