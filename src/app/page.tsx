@@ -89,7 +89,7 @@ export default async function Home() {
                 className="flex flex-col items-center gap-2"
               >
                 <div
-                  className="relative w-32 rounded-full overflow-hidden"
+                  className="relative min-w-40 rounded-full overflow-hidden"
                   style={{
                     aspectRatio: "1 / 1",
                   }}
