@@ -8,5 +8,8 @@ export type MemberData = {
     id: string;
     name: string;
     role?: string | undefined;
-    github?: string | undefined;
+    link?: {
+        type: string;
+        url: string | undefined;
+    };
 };
