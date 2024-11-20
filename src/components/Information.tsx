@@ -1,6 +1,6 @@
 type Props = {
     title: string;
-    contents: string | string[];
+    contents: string[];
 };
 
 export const Information = ({ title, contents }: Readonly<Props>) => {
@@ -10,9 +10,7 @@ export const Information = ({ title, contents }: Readonly<Props>) => {
                 {title}
             </p>
             <div className="flex flex-col items-end text-lg">
-                {!Array.isArray(contents)
-                    ? <p>{contents}</p>
-                    : contents.map((c) => <p key={c}>{c}</p>)}
+                {contents.map((c) => <p key={c}>{c}</p>)}
             </div>
         </div>
     );
