@@ -1,5 +1,18 @@
 import { MemberData } from "@/types";
 
+export const INFORMATION_LIST = [
+    { title: "仕様", contents: ["A5サイズ/未定ページ"] },
+    {
+        title: "頒布情報",
+        contents: ["アイマスEXPO 12/14(土)", "タ-1b HoShiKaRaSu"],
+    },
+    { title: "会場頒布価格", contents: ["500円"] },
+    {
+        title: "企画責任者",
+        contents: ["ほしのりゅう", "starrykarasu@gmail.com"],
+    },
+] as const satisfies { title: string; contents: string[] }[];
+
 export const MEMBER_MAP = {
     "Starrykarasu": {
         id: "Starrykarasu",
