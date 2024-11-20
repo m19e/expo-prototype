@@ -1,11 +1,8 @@
 import Image from "next/image";
-import { CONTACT_ID_LIST, MEMBER_ID_LIST, MEMBER_MAP } from "@/constants";
-import { Member } from "@/components/Member";
-import { GitHubIcon } from "@/components/icons/GitHub";
-import { TwitterIcon } from "@/components/icons/Twitter";
+import { CONTACT_ID_LIST, MEMBER_ID_LIST } from "@/constants";
 import { Information } from "@/components/Information";
-import { InstagramIcon } from "@/components/icons/Instagram";
 import { TwitterShareButton } from "@/components/TwitterShareButton";
+import { Member } from "@/components/Member";
 import { Contact } from "@/components/Contact";
 
 export default async function Home() {
