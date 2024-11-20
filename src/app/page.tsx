@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CONTACT_ID_LIST, MEMBER_ID_LIST } from "@/constants";
+import { CONTACT_ID_LIST, INFORMATION_LIST, MEMBER_ID_LIST } from "@/constants";
 import { Information } from "@/components/Information";
 import { TwitterShareButton } from "@/components/TwitterShareButton";
 import { Member } from "@/components/Member";
@@ -46,22 +46,12 @@ export default async function Home() {
                 <p className="text-2xl">Twinkle Happy Sharing!</p>
                 <p className="text-xl">-2nd SEASON-</p>
               </div>
-              <Information
-                title="仕様"
-                contents="A5サイズ/未定ページ"
-              />
-              <Information
-                title="頒布情報"
-                contents={["アイマスEXPO 12/14(土)", "タ-1b HoShiKaRaSu"]}
-              />
-              <Information
-                title="会場頒布価格"
-                contents="500円"
-              />
-              <Information
-                title="企画責任者"
-                contents={["ほしのりゅう", "starrykarasu@gmail.com"]}
-              />
+              {INFORMATION_LIST.map((info) => (
+                <Information
+                  key={info.title}
+                  {...info}
+                />
+              ))}
               <div className="flex justify-center">
                 <TwitterShareButton />
               </div>
