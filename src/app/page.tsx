@@ -6,6 +6,7 @@ import { TwitterIcon } from "@/components/icons/Twitter";
 import { Information } from "@/components/Information";
 import { InstagramIcon } from "@/components/icons/Instagram";
 import { TwitterShareButton } from "@/components/TwitterShareButton";
+import { Contact } from "@/components/Contact";
 
 export default async function Home() {
   return (
@@ -86,52 +87,7 @@ export default async function Home() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {CONTACT_ID_LIST.map((memberId) => (
-              <div
-                key={memberId}
-                className="flex flex-col items-center gap-2"
-              >
-                <div
-                  className="relative min-w-40 rounded-full overflow-hidden"
-                  style={{
-                    aspectRatio: "1 / 1",
-                  }}
-                >
-                  <Image
-                    src={`/avatar/${memberId}.jpg`}
-                    alt="cover"
-                    fill
-                    style={{ objectFit: "cover" }}
-                    priority
-                  />
-                </div>
-                <div className="flex flex-col items-center gap-1">
-                  <span className="text-sm px-1 border-b-2 border-gray-600 border-dashed">
-                    {MEMBER_MAP[memberId].role}
-                  </span>
-                  <span className="text-lg">{MEMBER_MAP[memberId].name}</span>
-                  <div className="flex items-center gap-1">
-                    <a
-                      href={`https://twitter.com/${memberId}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <TwitterIcon className="w-6 h-6" />
-                    </a>
-                    {MEMBER_MAP[memberId].link.type !== "none" && (
-                      <a
-                        href={MEMBER_MAP[memberId].link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {MEMBER_MAP[memberId].link.type === "github" &&
-                          <GitHubIcon className="w-7 h-7" />}
-                        {MEMBER_MAP[memberId].link.type === "instagram" &&
-                          <InstagramIcon className="w-7 h-7" />}
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
+              <Contact key={memberId} id={memberId} />
             ))}
           </div>
         </section>
