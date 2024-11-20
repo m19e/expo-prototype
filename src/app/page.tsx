@@ -84,7 +84,7 @@ export default async function Home() {
           <p className="text-5xl font-semibold text-gray-700 border-b-4 border-yellow-300 border-double">
             Contact
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {CONTACT_ID_LIST.map((memberId) => (
               <div
                 key={memberId}
