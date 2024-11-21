@@ -1,3 +1,4 @@
+import { TWITTER_SHARE_TEXT } from "@/constants";
 import { TwitterIcon } from "@/components/icons/Twitter";
 
 const getURL = (text: string) =>
@@ -7,7 +8,7 @@ const getURL = (text: string) =>
 export const TwitterShareButton = () => {
     return (
         <a
-            href={getURL("TwinkleHappySharing!\-2nd season-")}
+            href={getURL(TWITTER_SHARE_TEXT)}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center px-3 gap-1.5 bg-[#0F1419] text-white rounded-full transition-opacity hover:opacity-80"
