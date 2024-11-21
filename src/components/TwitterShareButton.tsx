@@ -1,4 +1,4 @@
-import { TwitterIcon } from "./icons/Twitter";
+import { TwitterIcon } from "@/components/icons/Twitter";
 
 const getURL = (text: string) =>
     "https://twitter.com/intent/tweet?text=" +
