@@ -93,5 +93,8 @@ export const CONTACT_ID_LIST = [
     "Versas_me",
 ] as const;
 
-export const TWITTER_SHARE_TEXT = `『TwinkleHappySharing!-2nd season-』特設サイト
-#アイマスEXPO #イルミネルームシェアアンソロ2nd`;
+export const TWITTER_SHARE_TEXT =
+    `『TwinkleHappySharing!-2nd season-』特設サイト
+#アイマスEXPO #イルミネルームシェアアンソロ2nd
+
+${process.env.NEXT_PUBLIC_SITE_ROOT_URL}`;
