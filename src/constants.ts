@@ -93,6 +93,5 @@ export const CONTACT_ID_LIST = [
     "Versas_me",
 ] as const;
 
-export const TWITTER_SHARE_TEXT = `イルミネルームシェアアンソロジー
-『TwinkleHappySharing! -2nd season-』特設サイト
-#アイマスEXPOのハッシュタグとかあれば`;
+export const TWITTER_SHARE_TEXT = `『TwinkleHappySharing!-2nd season-』特設サイト
+#アイマスEXPO #イルミネルームシェアアンソロ2nd`;
