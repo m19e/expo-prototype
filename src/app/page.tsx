@@ -80,8 +80,8 @@ export default async function Home() {
         </section>
       </main>
       <footer className="bg-yellow-800 py-4 w-full flex justify-center">
-        <span className="text-white text-sm">
-          ※「公式や関係者様とは関係ありません」みたいなテキストを置く
+        <span className="text-white text-sm font-rounded">
+          本サイト・企画は非公式作品であり、原作及びその関係者様とは一切関係ありません。
         </span>
       </footer>
     </div>
