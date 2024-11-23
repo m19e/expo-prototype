@@ -87,10 +87,10 @@ export const MEMBER_ID_LIST = [
 ] as const;
 
 export const CONTACT_ID_LIST = [
-    "Starrykarasu",
     "ultimate_wanwan",
     "CootDesign",
     "Versas_me",
+    "Starrykarasu",
 ] as const;
 
 export const TWITTER_SHARE_TEXT =
