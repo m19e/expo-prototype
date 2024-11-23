@@ -19,12 +19,7 @@ export const Contact = ({ id }: Readonly<Props>) => {
 
     return (
         <div className="flex flex-col items-center gap-2">
-            <div
-                className="relative min-w-40 rounded-full overflow-hidden"
-                style={{
-                    aspectRatio: "1 / 1",
-                }}
-            >
+            <div className="relative min-w-40 rounded-full shadow-md overflow-hidden aspect-square">
                 <Image
                     src={`/avatar/${id}.jpg`}
                     alt="cover"
