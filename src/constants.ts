@@ -77,13 +77,13 @@ export const MEMBER_MAP = {
 } as const satisfies { [key: string]: MemberData };
 
 export const MEMBER_ID_LIST = [
-    "o2_hk5",
     "cocoa_mouso",
+    "mikamihoP",
+    "o2_hk5",
     "hakkadr",
     "hataori_ryo",
     "gene_lt4147",
     "Starrykarasu",
-    "mikamihoP",
 ] as const;
 
 export const CONTACT_ID_LIST = [
