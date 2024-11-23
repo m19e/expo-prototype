@@ -33,7 +33,7 @@ export const MEMBER_MAP = {
     },
     "o2_hk5": {
         id: "o2_hk5",
-        name: "荻原六花",
+        name: "萩原六花",
     },
     "cocoa_mouso": {
         id: "cocoa_mouso",
@@ -45,7 +45,7 @@ export const MEMBER_MAP = {
     },
     "mikamihoP": {
         id: "mikamihoP",
-        name: "ほり。",
+        name: "軍鶏",
     },
     "ultimate_wanwan": {
         id: "ultimate_wanwan",
