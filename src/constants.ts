@@ -80,8 +80,8 @@ export const MEMBER_ID_LIST = [
     "cocoa_mouso",
     "mikamihoP",
     "o2_hk5",
-    "hakkadr",
     "hataori_ryo",
+    "hakkadr",
     "gene_lt4147",
     "Starrykarasu",
 ] as const;
