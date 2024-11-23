@@ -79,7 +79,11 @@ export default async function Home() {
           </div>
         </section>
       </main>
-      <footer className="bg-yellow-800 h-8 w-full"></footer>
+      <footer className="bg-yellow-800 py-4 w-full flex justify-center">
+        <span className="text-white text-sm">
+          ※「公式や関係者様とは関係ありません」みたいなテキストを置く
+        </span>
+      </footer>
     </div>
   );
 }
