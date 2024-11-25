@@ -10,12 +10,7 @@ type Props = {
 export const Member = ({ id }: Readonly<Props>) => {
     return (
         <div className="flex flex-col items-center">
-            <div
-                className="relative min-w-40 overflow-hidden rounded-md shadow-md"
-                style={{
-                    aspectRatio: "1 / 1",
-                }}
-            >
+            <div className="relative min-w-40 aspect-square overflow-hidden rounded-md shadow-md">
                 <Image
                     src={`/avatar/${id}.jpg`}
                     alt="cover"
