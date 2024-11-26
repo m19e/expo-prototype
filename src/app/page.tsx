@@ -79,8 +79,8 @@ export default async function Home() {
           </div>
         </section>
       </main>
-      <footer className="bg-yellow-800 py-4 w-full flex justify-center">
-        <span className="text-white text-sm font-rounded">
+      <footer className="bg-yellow-800 px-4 py-2 sm:py-4 w-full flex justify-center">
+        <span className="text-white text-xs sm:text-sm font-rounded">
           本サイト・企画は非公式作品であり、原作及びその関係者様とは一切関係ありません。
         </span>
       </footer>
