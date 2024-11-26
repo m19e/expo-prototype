@@ -7,7 +7,7 @@ type Props = {
     className?: string;
 };
 
-export const GitHubIconForAccessibility = ({ className }: Readonly<Props>) => {
+export const GitHubIconForA11y = ({ className }: Readonly<Props>) => {
     const { iOS } = useUA();
 
     return (

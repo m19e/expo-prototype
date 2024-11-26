@@ -7,7 +7,7 @@ type Props = {
     className?: string;
 };
 
-export const InstagramIconForAccessibility = (
+export const InstagramIconForA11y = (
     { className }: Readonly<Props>,
 ) => {
     const { iOS } = useUA();

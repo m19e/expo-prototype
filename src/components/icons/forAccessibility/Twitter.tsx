@@ -7,7 +7,7 @@ type Props = {
     className?: string;
 };
 
-export const TwitterIconForAccessibility = ({ className }: Readonly<Props>) => {
+export const TwitterIconForA11y = ({ className }: Readonly<Props>) => {
     const { iOS } = useUA();
 
     return (
