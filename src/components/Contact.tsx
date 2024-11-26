@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { ContactID } from "@/types";
 import { MEMBER_MAP } from "@/constants";
-import { TwitterIcon } from "@/components/icons/Twitter";
-import { InstagramIcon } from "@/components/icons/Instagram";
-import { GitHubIcon } from "@/components/icons/GitHub";
+import { TwitterIconForAccessibility } from "@/components/icons/forAccessibility/Twitter";
+import { InstagramIconForAccessibility } from "./icons/forAccessibility/Instagram";
+import { GitHubIconForAccessibility } from "./icons/forAccessibility/GitHub";
 
 type Props = {
     id: ContactID;
@@ -39,7 +39,7 @@ export const Contact = ({ id }: Readonly<Props>) => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <TwitterIcon className="w-6 h-6" />
+                        <TwitterIconForAccessibility className="w-6 h-6" />
                     </a>
                     {existOtherLink && (
                         <a
@@ -48,9 +48,13 @@ export const Contact = ({ id }: Readonly<Props>) => {
                             rel="noopener noreferrer"
                         >
                             {linkType === "instagram" &&
-                                <InstagramIcon className="w-7 h-7" />}
+                                (
+                                    <InstagramIconForAccessibility className="w-7 h-7" />
+                                )}
                             {linkType === "github" &&
-                                <GitHubIcon className="w-7 h-7" />}
+                                (
+                                    <GitHubIconForAccessibility className="w-7 h-7" />
+                                )}
                         </a>
                     )}
                 </div>
