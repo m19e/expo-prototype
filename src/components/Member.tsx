@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MEMBER_MAP } from "@/constants";
 import { MemberID } from "@/types";
-import { TwitterIcon } from "@/components/icons/Twitter";
+import { TwitterIconForAccessibility } from "@/components/icons/forAccessibility/Twitter";
 
 type Props = {
     id: MemberID;
@@ -26,7 +26,7 @@ export const Member = ({ id }: Readonly<Props>) => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <TwitterIcon className="w-6 h-6" />
+                    <TwitterIconForAccessibility className="w-6 h-6" />
                 </a>
             </div>
         </div>
