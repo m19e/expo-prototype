@@ -68,6 +68,32 @@ export default async function Home() {
           </div>
         </section>
 
+        <section className="flex flex-col items-center p-8">
+          <div className="relative w-full max-w-[26rem] aspect-[9/16]">
+            <Image
+              className="shadow-md"
+              src="/sample/sample_9x16.png"
+              alt="cover"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+            />
+          </div>
+        </section>
+
+        <section className="flex flex-col items-center p-8">
+          <div className="relative w-full max-w-[26rem] aspect-[9/16]">
+            <Image
+              className="shadow-md"
+              src="/sample/font_small.png"
+              alt="cover"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+            />
+          </div>
+        </section>
+
         <section className="flex flex-col items-center space-y-12 pb-12">
           <p className="text-5xl font-semibold text-gray-700 border-b-4 border-yellow-300 border-double">
             Contact
