@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { ContactID } from "@/types";
 import { MEMBER_MAP } from "@/constants";
 import { TwitterIconForA11y } from "@/components/icons/forAccessibility/Twitter";
