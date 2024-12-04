@@ -1,10 +1,9 @@
 import Image from "next/image";
-
 import { ContactID } from "@/types";
 import { MEMBER_MAP } from "@/constants";
 import { TwitterIconForA11y } from "@/components/icons/forAccessibility/Twitter";
-import { InstagramIconForA11y } from "./icons/forAccessibility/Instagram";
-import { GitHubIconForA11y } from "./icons/forAccessibility/GitHub";
+import { InstagramIconForA11y } from "@/components/icons/forAccessibility/Instagram";
+import { GitHubIconForA11y } from "@/components/icons/forAccessibility/GitHub";
 
 type Props = {
     id: ContactID;
