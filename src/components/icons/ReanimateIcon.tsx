@@ -1,7 +1,7 @@
 "use client";
 
+import { type ReactNode } from "react";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
-import { ReactNode } from "react";
 
 type Props = {
     className?: string;
