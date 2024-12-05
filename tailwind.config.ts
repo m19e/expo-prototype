@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import { addIconSelectors } from "@iconify/tailwind";
+import daisyui from "daisyui";
 
 const config: Config = {
   content: [
@@ -25,6 +26,7 @@ const config: Config = {
       prefixes: ["line-md"],
       iconSelector: ".{prefix}__{name}",
     }),
+    daisyui,
   ],
 };
 export default config;
