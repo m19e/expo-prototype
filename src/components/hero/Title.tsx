@@ -11,7 +11,7 @@ export const TitleAbsolute = () => {
 export const TitleContent = () => {
     return (
         <div className="h-full min-w-min bg-gradient-to-b from-[#5d658d] to-[#f4c6d7] to-75% z-10">
-            <div className="relative h-full aspect-[159/1234] -ml-3 xl:ml-0 mr-3">
+            <div className="relative h-full aspect-[159/1234] -ml-2 xl:ml-0 mr-3">
                 <Image
                     className="z-10"
                     src="/hero/main.webp"
@@ -20,7 +20,7 @@ export const TitleContent = () => {
                     style={{ objectFit: "cover" }}
                     priority
                 />
-                <div className="absolute left-3 bottom-[20%] w-[275%] aspect-[380/60]">
+                <div className="absolute left-2 bottom-[20%] w-[275%] aspect-[380/60]">
                     <Image
                         src="/hero/2nd-season.webp"
                         alt="hero/2nd-season"
