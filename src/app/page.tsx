@@ -30,16 +30,34 @@ export default async function Home() {
             style={{ objectFit: "cover" }}
             priority
           />
+          <TitleAbsolute />
         </div>
+        {/* <TitleAbsolute /> */}
 
-        <div className="expo-title bg-gradient-to-r from-indigo-400 to-pink-200 pt-1 pr-1">
+        {
+          /* <div className="expo-title bg-gradient-to-r from-indigo-400 to-pink-200 pt-1 pr-1">
           <span className="text-4xl md:text-5xl lg:text-6xl font-extralight bg-gradient-to-b from-white via-white to-transparent text-transparent bg-clip-text">
             Twinkle Happy Sharing!
           </span>
-        </div>
+        </div> */
+        }
       </header>
+
       <main className="flex flex-col w-full space-y-12 font-rounded font-bold text-gray-700 bg-gradient-to-b from-blue-100 via-pink-100 to-yellow-50">
-        <section className="flex flex-col items-center space-y-12 pt-12">
+        <section className="flex flex-col items-center pt-12">
+          <div className="bg-gray-700 p-4 md:p-8 rounded">
+            <div className="relative aspect-[10/1] w-[20rem] md:w-[36rem]">
+              <Image
+                src="/hero/fanbook.webp"
+                alt="hero/fanbook"
+                fill
+                style={{ objectFit: "cover" }}
+                priority
+              />
+            </div>
+          </div>
+        </section>
+        <section className="flex flex-col items-center space-y-12">
           <p className="text-5xl text-gray-700 border-b-4 border-blue-300 border-double">
             Information
           </p>
