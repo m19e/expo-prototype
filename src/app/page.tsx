@@ -59,10 +59,15 @@ export default async function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col items-center space-y-12">
-          <p className="text-5xl font-semibold text-gray-700 border-b-4 border-pink-300 border-double">
-            Members
-          </p>
+        <section className="flex flex-col items-center space-y-6">
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-5xl font-semibold text-gray-700 border-b-4 border-pink-300 border-double">
+              Members
+            </p>
+            <p className="text-sm">
+              アイコンをタップ/クリックでサンプルがご覧になれます
+            </p>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-4 items-center gap-x-4 gap-y-2">
             {MEMBER_ID_LIST.map((id) => <Member key={id} id={id} />)}
           </div>
