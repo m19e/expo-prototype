@@ -45,7 +45,7 @@ export default async function Home() {
 
       <main className="flex flex-col w-full space-y-12 font-rounded font-bold text-gray-700 bg-gradient-to-b from-blue-100 via-pink-100 to-yellow-50">
         <section className="flex flex-col items-center pt-12">
-          <div className="bg-gray-700 p-4 md:p-8 rounded">
+          <div className="bg-[#5d658d] p-4 md:p-8 rounded">
             <div className="relative aspect-[10/1] w-[20rem] md:w-[36rem]">
               <Image
                 src="/hero/fanbook.webp"
