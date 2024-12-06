@@ -12,7 +12,7 @@ export const Member = ({ id }: Readonly<Props>) => {
         <div className="flex flex-col items-center">
             <SampleDialog id={id} />
             <div className="w-full flex items-center justify-between py-2">
-                <p className="">{MEMBER_MAP[id].name}</p>
+                <p>{MEMBER_MAP[id].name}</p>
                 <a
                     href={`https://twitter.com/${id}`}
                     target="_blank"
