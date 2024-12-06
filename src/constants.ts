@@ -1,7 +1,7 @@
 import { MemberData } from "@/types";
 
 export const INFORMATION_LIST = [
-    { title: "仕様", contents: ["A5サイズ/70ページ"] },
+    { title: "仕様", contents: ["A5サイズ/70ページ", "クリアカバー仕様"] },
     {
         title: "頒布情報",
         contents: ["アイマスEXPO 12/14(土)", "タ-1b HoShiKaRaSu"],
