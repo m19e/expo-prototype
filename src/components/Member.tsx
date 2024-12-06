@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { MEMBER_MAP } from "@/constants";
 import { MemberID } from "@/types";
 import { TwitterIconForA11y } from "@/components/icons/forAccessibility/Twitter";
