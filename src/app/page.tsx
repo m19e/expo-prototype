@@ -64,7 +64,7 @@ export default async function Home() {
             <p className="text-5xl font-semibold text-gray-700 border-b-4 border-pink-300 border-double">
               Members
             </p>
-            <p className="text-sm">
+            <p className="text-sm tracking-tight">
               アイコンをタップ/クリックでサンプルがご覧になれます
             </p>
           </div>
