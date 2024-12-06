@@ -4,12 +4,25 @@ import { Information } from "@/components/Information";
 import { TwitterShareButton } from "@/components/TwitterShareButton";
 import { Member } from "@/components/Member";
 import { Contact } from "@/components/Contact";
+import { TitleAbsolute, TitleContent } from "@/components/hero/Title";
 
 export default async function Home() {
   return (
     <div className="grid items-center justify-items-center">
       <header className="w-full relative flex justify-center overflow-hidden bg-pattern font-geist-sans">
-        <div className="relative max-h-screen aspect-[3/4] w-full md:aspect-[5/4] md:w-auto md:h-screen xl:aspect-[3/2]">
+        <div className="flex xl:hidden relative w-full max-h-screen aspect-[7/8] md:aspect-[5/4] md:h-screen">
+          <TitleContent />
+          <div className="relative z-0 flex-1 aspect-[3/4] md:aspect-[2/3]">
+            <Image
+              src="/cover.webp"
+              alt="cover room"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+            />
+          </div>
+        </div>
+        <div className="hidden xl:flex relative max-h-screen xl:h-screen xl:aspect-[3/2]">
           <Image
             src="/cover.webp"
             alt="cover room"
@@ -84,6 +97,7 @@ export default async function Home() {
           </div>
         </section>
       </main>
+
       <footer className="bg-yellow-800 px-4 py-2 sm:py-4 w-full flex justify-center">
         <span className="text-white text-xs sm:text-sm font-rounded">
           本サイト・企画は非公式作品であり、原作及びその関係者様とは一切関係ありません。
