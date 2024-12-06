@@ -48,24 +48,20 @@ export const AnimatedWindow = () => {
                 ref={container}
             >
                 <div className="window-frame absolute z-10 inset-0 grid place-content-center bg-pattern">
-                    <div className="flex flex-col items-center gap-2">
-                        <div className="w-96 h-3 border-2 border-gray-400 bg-blue-200">
-                        </div>
-                        <div className="p-2 border border-gray-400 bg-blue-200">
-                            <div
-                                className="flex border border-gray-400 bg-gradient-to-b from-blue-100 via-pink-100 to-yellow-50"
-                                style={{
-                                    WebkitPerspective: "800px",
-                                    perspective: "800px",
-                                }}
-                            >
-                                <div className="window-left origin-left w-40 h-80 bg-blue-200 border border-gray-400 z-10 p-2">
-                                    <div className="w-full h-full border-2 border-gray-400 bg-gradient-to-b from-[#5d658d] to-[#f4c6d7] to-75%">
-                                    </div>
+                    <div className="p-2 border border-gray-400 bg-blue-200">
+                        <div
+                            className="flex border border-gray-400 bg-gradient-to-b from-blue-100 via-pink-100 to-yellow-50"
+                            style={{
+                                WebkitPerspective: "800px",
+                                perspective: "800px",
+                            }}
+                        >
+                            <div className="window-left origin-left w-40 h-80 bg-blue-200 border border-gray-400 z-10 p-2">
+                                <div className="w-full h-full border-2 border-gray-400 bg-gradient-to-b from-[#5d658d] to-[#f4c6d7] to-75%">
                                 </div>
-                                <div className="window-right origin-right w-40 h-80 bg-blue-200 border border-gray-400 z-10 p-2">
-                                    <div className="w-full h-full border-2 border-gray-400 bg-gradient-to-b from-[#5d658d] to-[#f4c6d7] to-75%">
-                                    </div>
+                            </div>
+                            <div className="window-right origin-right w-40 h-80 bg-blue-200 border border-gray-400 z-10 p-2">
+                                <div className="w-full h-full border-2 border-gray-400 bg-gradient-to-b from-[#5d658d] to-[#f4c6d7] to-75%">
                                 </div>
                             </div>
                         </div>
