@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description: "イルミネーションスターズ ルームシェアアンソロジー",
   openGraph: {
     images: [{
-      url: "https://expo-prototype.vercel.app/ogp.webp",
+      url: `${process.env.NEXT_PUBLIC_SITE_ROOT_URL}/ogp.webp`,
     }],
     title: "Twinkle Happy Sharing! -2nd SEASON-",
     description: "イルミネーションスターズ ルームシェアアンソロジー",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     images: [{
-      url: "https://expo-prototype.vercel.app/ogp.webp",
+      url: `${process.env.NEXT_PUBLIC_SITE_ROOT_URL}/ogp.webp`,
     }],
     title: "Twinkle Happy Sharing! -2nd SEASON-",
     description: "イルミネーションスターズ ルームシェアアンソロジー",
