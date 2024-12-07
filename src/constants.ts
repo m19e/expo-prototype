@@ -94,7 +94,7 @@ export const CONTACT_ID_LIST = [
 ] as const;
 
 export const TWITTER_SHARE_TEXT =
-    `『TwinkleHappySharing!-2nd season-』特設サイト
+    `『Twinkle Happy Sharing! -2nd season-』特設サイト
 #アイマスEXPO #アイマスエキスポ
 #イルミネルームシェアアンソロ2nd
 
