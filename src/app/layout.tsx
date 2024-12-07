@@ -21,8 +21,23 @@ const rounded = M_PLUS_Rounded_1c({
 });
 
 export const metadata: Metadata = {
-  title: "Twinkle Happy Sharing! 2nd SEASON",
+  title: "Twinkle Happy Sharing! -2nd SEASON-",
   description: "イルミネーションスターズ ルームシェアアンソロジー",
+  openGraph: {
+    images: [{
+      url: "https://expo-prototype.vercel.app/ogp.webp",
+    }],
+    title: "Twinkle Happy Sharing! -2nd SEASON-",
+    description: "イルミネーションスターズ ルームシェアアンソロジー",
+  },
+  twitter: {
+    card: "summary",
+    images: [{
+      url: "https://expo-prototype.vercel.app/ogp.webp",
+    }],
+    title: "Twinkle Happy Sharing! -2nd SEASON-",
+    description: "イルミネーションスターズ ルームシェアアンソロジー",
+  },
 };
 
 export default function RootLayout({
