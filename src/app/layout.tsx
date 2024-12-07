@@ -38,6 +38,8 @@ export const metadata: Metadata = {
     title: "Twinkle Happy Sharing! -2nd SEASON-",
     description: "イルミネーションスターズ ルームシェアアンソロジー",
   },
+  icons:
+    "https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f31f.png",
 };
 
 export default function RootLayout({
