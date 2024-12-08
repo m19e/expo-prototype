@@ -35,7 +35,7 @@ export const SampleDialog = ({ id }: Readonly<Props>) => {
                         <Image
                             className="border-2"
                             src={`/sample/${id}.png`}
-                            alt="cover"
+                            alt={`/sample/${id}`}
                             fill
                             style={{ objectFit: "cover" }}
                             priority
