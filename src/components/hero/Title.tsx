@@ -15,7 +15,7 @@ export const TitleContent = () => {
                 <Image
                     className="z-10"
                     src="/hero/main.webp"
-                    alt="hero/main"
+                    alt="/hero/main"
                     fill
                     style={{ objectFit: "cover" }}
                     priority
@@ -23,7 +23,7 @@ export const TitleContent = () => {
                 <div className="absolute left-2 bottom-[20%] w-[275%] aspect-[380/60]">
                     <Image
                         src="/hero/2nd-season.webp"
-                        alt="hero/2nd-season"
+                        alt="/hero/2nd-season"
                         fill
                         style={{ objectFit: "cover" }}
                         priority
