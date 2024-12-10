@@ -22,7 +22,7 @@ export const SampleDialog = ({ id }: Readonly<Props>) => {
             >
                 <Image
                     src={`/avatar/${id}.jpg`}
-                    alt="cover"
+                    alt={`/avatar/${id}`}
                     fill
                     style={{ objectFit: "cover" }}
                     priority
