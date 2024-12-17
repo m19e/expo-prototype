@@ -22,7 +22,7 @@ export const Contact = ({ id }: Readonly<Props>) => {
             <div className="relative min-w-40 rounded-full shadow-md overflow-hidden aspect-square">
                 <Image
                     src={`/avatar/${id}.jpg`}
-                    alt="cover"
+                    alt={`/avatar/${id}`}
                     fill
                     style={{ objectFit: "cover" }}
                     priority
